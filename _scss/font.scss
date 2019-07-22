@@ -118,3 +118,11 @@ $header-bp: $grid-val*34; // 1020px, header changes
     font-weight: normal;
     font-style: normal;
 }
+
+html {
+  font-family: 'tittillium', sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+  }
+}
+}
