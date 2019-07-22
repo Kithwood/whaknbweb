@@ -1,3 +1,5 @@
 theme: jekyll-theme-slate
 plugins:
  - jekyll-include-cache
+ sass:
+    sass_dir: _sass
