@@ -1,8 +1,11 @@
-header.div {
-  float: left;
+header{
+  div{
+      float: left;
+  }
+ 
   img {
-     max-width:200px;
+     max-width:120px;
      margin-right:50px;
      float:left;
   }
- }
+}
