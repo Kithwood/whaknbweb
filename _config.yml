@@ -1,4 +1,7 @@
 theme: jekyll-theme-slate
+sass:
+  sass_dir:          _scss
+  style:            :compressed
 plugins:
  - jekyll-include-cache
 
