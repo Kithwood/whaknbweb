@@ -8,4 +8,9 @@ header{
      margin-right:50px;
      float:left;
   }
+  
+  ::after {
+    content:"";
+    display:block;
+  }
 }
