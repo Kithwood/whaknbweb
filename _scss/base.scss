@@ -9,3 +9,9 @@ body {
       "left   middle right"
       "footer footer footer";
 }
+
+.container {
+  grid-area:middle;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
