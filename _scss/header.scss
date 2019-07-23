@@ -6,6 +6,10 @@ header{
          line-height:.5em;
          padding-top:.25em;
        }
+    
+    .tagline {
+        margin-left:164px;
+      }
   }
  
   .logo {
@@ -16,7 +20,3 @@ header{
   }
 }
 
-.tagline {
-        grid-column-start:2;
-        grid-area:header;
-      }
