@@ -2,9 +2,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-}
-
-.wrapper {
   display: grid;
+  grid-template-columns: 10em auto 10em;
+  grid-template-areas: 
+      "header header header"
+      "left   middle right"
+      "footer footer footer";
 }
-
