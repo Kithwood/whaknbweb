@@ -14,8 +14,9 @@ header{
      float:left;
     content: url(https://kithwood.github.io/whaknbweb/assets/images/tsdmgk-650x624.png);
   }
-  
-  .tagline {
-        grid-column-start:2;
-      }
 }
+
+.tagline {
+        grid-column-start:2;
+        grid-area:header;
+      }
