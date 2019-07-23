@@ -1,3 +1,6 @@
+---
+---
+
 header{
   grid-area:header;
   grid-column-start:2;
@@ -14,7 +17,7 @@ header{
      max-width:120px;
      margin-right:20px;
      float:left;
-     content: url(/assets/images/tsdmgk-650x624.png);
+    content: url({{site.baseurl}}/assets/images/tsdmgk-650x624.png);
   }
   
   .tagline {
