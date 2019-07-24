@@ -39,3 +39,18 @@ body {
 .content {
   grid-area:middle;
 }
+
+@media(max-width: 700px) {
+
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-areas: 
+        "header"
+        "middle"
+        "footer";
+  }
+}
