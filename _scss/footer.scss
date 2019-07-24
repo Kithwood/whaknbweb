@@ -23,3 +23,11 @@ footer {
         }
     }
 }
+
+@media(max-width: 1080px) {
+
+    footer {
+      grid-column-start: 1;
+      grid-column-end : 1;
+    }
+  }

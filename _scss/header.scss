@@ -33,3 +33,10 @@ header{
   }
 }
 
+@media(max-width: 1080px) {
+
+  header {
+    grid-column-start: 1;
+    grid-column-end : 1;
+  }
+}
