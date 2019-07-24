@@ -1,0 +1,25 @@
+footer {
+    margin-top: 24px;
+    background-color: $tsdlightgray;
+    grid-area:footer;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width:100%;
+    padding-left: 12px;
+
+    ul {
+        list-style-type: none;
+        align-content: center;
+        
+        li {
+            display:inline-block;
+            height: 24px;
+            
+            img {
+                max-height:24px;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+        }
+    }
+}

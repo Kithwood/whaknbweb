@@ -1,5 +1,7 @@
 header{
   grid-area:header;
+  grid-column-start: 2;
+  grid-column-end: 2;
   div{
        width:100%;
        h1 {
@@ -9,6 +11,17 @@ header{
     
     .tagline {
         margin-left:164px;
+        font-weight:bold;
+        margin-top: -8px;
+      }
+
+    .info {
+        text-align:right;
+        margin-top:8px;
+
+        a {
+          text-decoration:none;
+        }
       }
   }
  
@@ -17,8 +30,6 @@ header{
      margin-right:20px;
      float:left;
     content: url(https://kithwood.github.io/whaknbweb/assets/images/tsdmgk-650x624.png);
-  }
-  nav {
   }
 }
 

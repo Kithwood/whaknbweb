@@ -1,0 +1,128 @@
+- start: 10:00 a.m.
+  end  : 11:00 a.m.
+  days:
+  - class: Kyo Sa Class, 3rd Dan & Up
+    level: '6'
+    ages: 0
+  - class: All Levels
+    level: '0'
+    ages: 0
+  - class: No Class
+  - class: All Levels
+    level: '0'
+    ages: 0
+  - class: No Class
+  - class: Kids Class, All Levels
+    level: '0' 
+    ages : 6-12
+- start: 11:00 a.m.
+  end:   12:00 p.m.
+  days:
+  - class: No Class
+  - class: No Class
+  - class: No Class
+  - class: No Class
+  - class: No Class
+  - class: All Levels
+    level: '0'
+    ages: 13+
+- start: 4:00 p.m.
+  end  : 4:30 p.m.
+  days:
+  - class: No Class
+  - class: No Class
+  - class: Karat-a-Tots
+    level: '1'
+    ages: 4-5
+  - class: No Class
+  - class: Karat-a-Tots
+    level: '1'
+    ages: 4-5
+  - class: No Class
+- start: 4:30 p.m.
+  end  : 5:30 p.m.
+  days:
+    - class: White Belts
+      level: '1'
+      ages: 6-12
+    - class: Greed/Red/Dan
+      level: 3/4/5
+      ages: 6-12
+    - class: Orange Belts
+      level: '2'
+      ages: 6-12
+    - class: White Belts
+      level: '1'
+      ages: 6-12
+    - class: Dan & Red Belts
+      level: 4/5
+      ages: 0
+    - class: No Class
+- start: 5:15 p.m.
+  end  : 6:15 p.m.
+  days:
+    - class: Orange Belts
+      level: '2'
+      ages: 6-12
+    - class: White Belts
+      level: '1'
+      ages: 6-12
+    - class: Green/Red/Dan Belts
+      level: 3/4/5
+      ages: 6-12
+    - class: Orange Belts
+      level: '2'
+      ages: 6-12
+    - class: White Belts
+      level: '1'
+      ages: 0
+    - class: No Class
+- start: 6:00 p.m.
+  end  : 7:00 p.m.
+  days:
+    - class: Green/Red/Dan Belts
+      level: 3/4/5
+      ages: 6-12
+    - class: Orange Belts
+      level: '2'
+      ages: 6-12
+    - class: White Belts
+      level: '1'
+      ages: 6-12
+    - class: Green/Red/Dan Belts
+      level: 3/4/5
+      ages: 6-12
+    - class: Orange & Green Belts
+      level: 2/3
+      ages: '0'
+    - class: No Class
+- start: 7:00 p.m.
+  end  : 8:00 p.m.
+  days:
+    - class: Dan Class
+      level: '5'
+      ages: 0
+    - class: Sparring, Tournament, or Test Prep
+      level: '0'
+      ages: 0
+    - class: All Levels
+      level: '0'
+      ages: 13+
+    - class: All Levels
+      level: '0'
+      ages: 13+
+    - class: Special Clinics as Scheduled
+      level: '0'
+      ages: 0
+    - class: No Class
+- start: 8:00 p.m.
+  end  : 9:00 p.m.
+  days:
+    - class: All Levels
+      level: '0'
+      ages: 13+
+    - class: No Class
+    - class: No Class
+    - class: No Class
+    - class: No Class
+    - class: No Class

@@ -1,0 +1,88 @@
+---
+title: Schedule
+layout: main
+permalink: /schedule
+---
+
+<div id="calendar-wrap">
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
+        <div id="calendar">
+            <ul class="weekdays">
+                <li>Class Hours</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+            </ul>
+            {% for hours in site.data.schedule %}
+            <ul class="days">
+                <li class="day">
+                    <div class="event">{{hours.start}}-<br>{{hours.end}}</div>
+                </li>
+                {% for day in hours.days %}
+                <li class="day">
+                    <div class="event-desc">
+                    {% assign beltcolor = '' %}
+                    {% if day.class != 'No Class' %}
+                        {% if day.level contains '1' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',white' %}
+                            {% else %}
+                                {% assign beltcolor = 'white' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '2' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',orange' %}
+                            {% else %}
+                                {% assign beltcolor = 'orange' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '3' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',green' %}
+                            {% else %}
+                                {% assign beltcolor = 'green' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '4' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',red' %}
+                            {% else %}
+                                {% assign beltcolor = 'red' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '5' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',darkblue' %}
+                            {% else %}
+                                {% assign beltcolor = 'darkblue' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '6' %}
+                            {% if beltcolor != '' %}
+                                {% assign beltcolor = beltcolor | append: ',darkblue' %}
+                            {% else %}
+                                {% assign beltcolor = 'darkblue' %}
+                            {% endif %}
+                        {% endif %}
+                        {% if day.level contains '0' %}
+                            {% assign beltcolor = 'white, orange, green, red, darkblue, white, orange, green, red, darkblue' %}
+                        {% endif %}
+                        {% unless beltcolor contains ',' %}
+                            {% assign beltcolor = beltcolor | append: ', ' | append: beltcolor %}
+                        {% endunless %}
+                    <div class="belt" style="background-image: linear-gradient(to right, {{beltcolor}}) !important;"></div><br>{{ day.class }}<br>{% if day.ages == 0 %}All Ages{% else %}Ages: {{ day.ages }}{% endif %}
+                    {% endif %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+
+        </div><!-- /. calendar -->
+    </div><!-- /. wrap -->

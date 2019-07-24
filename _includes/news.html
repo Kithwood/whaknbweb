@@ -1,0 +1,10 @@
+<section class="news">
+<h2>Current Happenings</h2>
+{% for newsitem in site.data.news %}
+<h3>{{ newsitem.title }}</h3>
+<div style="border-left-color: gray !important;">
+    <div><strong>{{ newsitem.date }}</strong></div>
+    <div>{{ newsitem.description }}</div>
+</div>
+{% endfor %}
+</section>
