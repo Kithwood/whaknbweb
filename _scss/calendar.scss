@@ -40,8 +40,13 @@
     font-size: .7em;
 }
 
+
 #calendar .days li {
     height: 120px;
+}
+
+#calendar li.noclass {
+    display: block;
 }
 
 #calendar .days li:hover {
@@ -91,6 +96,11 @@
     width: 100%;
     height: .5em;
 }
+
+#calendar .inline-weekdays {
+    display:none;
+}
+
 /* ============================
                 Mobile Responsiveness
    ============================*/
@@ -98,7 +108,7 @@
 
 @media(max-width: 1200px) {
 
-    #calendar .weekdays, #calendar .other-month {
+    #calendar .weekdays, .other-month {
         display: none;
     }
 
@@ -112,5 +122,14 @@
 
     #calendar .date {
         float: none;
+    }
+
+    #calendar li.noclass {
+        display: none;
+    }
+
+    #calendar .inline-weekdays {
+        display:block;
+        background: $tsdblue;
     }
 }

@@ -2,6 +2,13 @@
 title: Schedule
 layout: main
 permalink: /schedule
+days:
+   - Monday
+   - Tuesday
+   - Wednesday
+   - Thursday
+   - Friday
+   - Saturday
 ---
 
 <div id="calendar-wrap">
@@ -20,11 +27,18 @@ permalink: /schedule
             </ul>
             {% for hours in site.data.schedule %}
             <ul class="days">
+                {% assign ndx = forloop.index | minus: 1 %}
+                <li class="inline-weekdays">{{ page.days[ndx] }}</li>
                 <li class="day">
                     <div class="event">{{hours.start}}-<br>{{hours.end}}</div>
                 </li>
                 {% for day in hours.days %}
-                <li class="day">
+                    {% if day.class == 'No Class' %}
+                     {% assign eventclass = "noclass" %}
+                     {% else %}
+                     {% assign eventclass = "" %}
+                    {% endif %}
+                <li class="day  {{ eventclass }}">   
                     <div class="event-desc">
                     {% assign beltcolor = '' %}
                     {% if day.class != 'No Class' %}
