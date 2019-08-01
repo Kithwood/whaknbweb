@@ -26,7 +26,7 @@
 }
 
 #calendar ul.weekdays {
-    height: 40px;
+    height: 2em;
     background: $tsdblue;
 }
 
@@ -37,7 +37,7 @@
     border: none !important;
     padding: 10px 6px;
     color: #fff;
-    font-size: 13px;
+    font-size: .7em;
 }
 
 #calendar .days li {
@@ -62,12 +62,12 @@
 #calendar .event {
     clear: both;
     display: block;
-    font-size: 13px;
+    font-size: 1em;
     border-radius: 4px;
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 5px;
-    line-height: 24px;
+    line-height: 1.5em;
     background: #e4f2f2;
     border: 1px solid #b5dbdc;
     color: #009aaf;

@@ -10,7 +10,7 @@ header{
        }
     
     .tagline {
-        margin-left:164px;
+        margin-left:6.8em;
         font-weight:bold;
         margin-top: -8px;
       }
@@ -26,17 +26,30 @@ header{
   }
  
   .logo {
-     max-width:120px;
+     max-width:20%;
      margin-right:20px;
      float:left;
     content: url(https://kithwood.github.io/whaknbweb/assets/images/tsdmgk-650x624.png);
   }
 }
 
-@media(max-width: 1080px) {
+@media(max-width: 1200px) {
 
   header {
     grid-column-start: 1;
     grid-column-end : 1;
+    
+    div {
+
+      h1 {
+        line-height: 1em;
+        font-size: 1em;
+      }
+
+      .tagline {
+        font-size: .7em;
+        margin-left:6.8em;
+      }
+    }
   }
 }
