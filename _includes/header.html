@@ -8,11 +8,7 @@
     <script type="text/javascript">
     $(function() {
       var pathname = window.location.pathname;
-      alert(pathname);
-       //a workaround for home for now...
-       if(pathname == "/")
-         pathname = "/whaknbweb";
-
+    
       $('a[href="'+pathname+'"]').addClass('active');
   
         $('a').click(function() {
@@ -30,7 +26,7 @@
       <div class="info">New Braunfels, TX<br>Phone:<a href="tel:1-830-606-0444">830-606-0444</a></div>
     </div>
   <nav>
-    <a href="/whaknbweb" class="">Home</a>
+    <a href="/whaknbweb/" class="">Home</a>
     <a href="/whaknbweb/schedule" class="">Schedule</a>
     <a href="#" class="">Media</a>
     <a href="/whaknbweb/about" class="">About</a> 
