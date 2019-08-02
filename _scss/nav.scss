@@ -20,9 +20,9 @@ nav {
         &:active {
             background-color: $tsdactive;
         }
-
-        .active {
-            background-color: $tsdactive;
-        }
+    }
+    
+    a.active{
+        background-color: $tsdactive;
     }
 }
