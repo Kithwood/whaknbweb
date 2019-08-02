@@ -18,11 +18,11 @@ nav {
             color: $tsddarkblue;
         }
         &:active {
-            background: $tsdactive;
+            background-color: $tsdactive;
         }
 
         .active {
-            background: $tsdhighlight;
+            background-color: $tsdhighlight;
         }
     }
 }
