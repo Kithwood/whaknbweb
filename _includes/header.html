@@ -7,6 +7,9 @@
     <script src="{{site.baseurl}}/assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
     $(function() {
+      var pathname = window.location.pathname;
+      $('a[href="'+pathname+'"]').addClass('active');
+  
         $('a').click(function() {
             $('a.active').removeClass('active');
             $(this).addClass('active');
@@ -23,7 +26,7 @@
     </div>
   <nav>
     <a href="/whaknbweb" class="">Home</a>
-    <a href="/whaknbweb/schedule class=""">Schedule</a>
+    <a href="/whaknbweb/schedule" class="">Schedule</a>
     <a href="#" class="">Media</a>
     <a href="/whaknbweb/about" class="">About</a> 
   </nav>
