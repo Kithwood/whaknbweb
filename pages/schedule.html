@@ -2,13 +2,6 @@
 title: Schedule
 layout: main
 permalink: /schedule
-days:
-   - Monday
-   - Tuesday
-   - Wednesday
-   - Thursday
-   - Friday
-   - Saturday
 ---
 
 <div id="calendar-wrap">
@@ -25,10 +18,8 @@ days:
                 <li>Friday</li>
                 <li>Saturday</li>
             </ul>
-            {% for hours in site.data.schedule %}
+            {% for hours in site.data.weeks_schedule %}
             <ul class="days">
-                {% assign ndx = forloop.index | minus: 1 %}
-                <li class="inline-weekdays">{{ page.days[ndx] }}</li>
                 <li class="day">
                     <div class="event">{{hours.start}}-<br>{{hours.end}}</div>
                 </li>
@@ -99,4 +90,70 @@ days:
             {% endfor %}
 
         </div><!-- /. calendar -->
-    </div><!-- /. wrap -->
+    <div id="mcalendar">
+        {% for day in site.data.days_schedule %}
+        <ul class="days">
+            <li class="daytitle">{{ day.day }}</li>
+            {% for hour in day.hours %}
+            <li class="day">   
+                <div class="event-desc">
+                {% assign beltcolor = '' %}
+                    {% if hour.level contains '1' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',white' %}
+                        {% else %}
+                            {% assign beltcolor = 'white' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '2' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',orange' %}
+                        {% else %}
+                            {% assign beltcolor = 'orange' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '3' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',green' %}
+                        {% else %}
+                            {% assign beltcolor = 'green' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '4' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',red' %}
+                        {% else %}
+                            {% assign beltcolor = 'red' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '5' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',darkblue' %}
+                        {% else %}
+                            {% assign beltcolor = 'darkblue' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '6' %}
+                        {% if beltcolor != '' %}
+                            {% assign beltcolor = beltcolor | append: ',darkblue' %}
+                        {% else %}
+                            {% assign beltcolor = 'darkblue' %}
+                        {% endif %}
+                    {% endif %}
+                    {% if hour.level contains '0' %}
+                        {% assign beltcolor = 'white, orange, green, red, darkblue, white, orange, green, red, darkblue' %}
+                    {% endif %}
+                    {% unless beltcolor contains ',' %}
+                        {% assign beltcolor = beltcolor | append: ', ' | append: beltcolor %}
+                    {% endunless %}
+                <div class="belt" style="background-image: linear-gradient(to right, {{beltcolor}}) !important;"></div>
+                    <div class="event">{{hour.start}} to {{hour.end}}</div>
+                    <div class="event-class"><br>{{ hour.class }}<br>{% if hour.ages == 0 %}All Ages{% else %}Ages: {{ hour.ages }}{% endif %}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+    </div><!-- /. calendar -->
+</div><!-- /. wrap -->

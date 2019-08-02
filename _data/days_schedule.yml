@@ -1,0 +1,140 @@
+- day: Monday
+  hours:
+    - start: 10:00 a.m.
+      end  : 11:00 a.m.
+      class: Kyo Sa Class, 3rd Dan & Up
+      level: '6'
+      ages : 0
+    - start: 4:30 p.m.
+      end  : 5:30 p.m.
+      class: White Belts
+      level: '0'
+      ages : 6-12
+    - start: 5:15 p.m.
+      end  : 6:15 p.m.
+      class: Orange Belts
+      level: '0'
+      ages : 6-12
+    - start: 6:00 p.m.
+      end  : 7:00 p.m.
+      class: Green/Red/Dan Belts
+      level: 3/4/5
+      ages: 6-12
+    - start: 7:00 p.m.
+      end  : 8:00 p.m.
+      class: Dan Class
+      level: '5'
+      ages: 0
+    - start: 8:00 p.m.
+      end  : 9:00 p.m.
+      class: All Levels
+      level: '0'
+      ages: 13+  
+- day: Tuesday
+  hours:
+    - start: 10:00 a.m.
+      end  : 11:00 a.m.
+      class: All Levels
+      level: '0'
+      ages: 0
+    - start: 4:30 p.m.
+      end  : 5:30 p.m.
+      class: Green, Red, Dan
+      level: 3/4/5
+      ages: 6-12
+    - start: 5:15 p.m.
+      end  : 6:15 p.m.
+      class: White Belts
+      level: '1'
+      ages : 6-12
+    - start: 6:00 p.m.
+      end  : 7:00 p.m.
+      class: Orange Belts
+      level: '2'
+      ages : 6-12
+    - start: 7:00 p.m.
+      end  : 8:00 p.m.
+      class: Sparring, Tournament, or Test Prep
+      level: '0'
+      ages : 0
+- day: Wednesday
+  hours:
+    - start: 4:00 p.m.
+      end  : 4:30 p.m.
+      class: Karate-a-Tots
+      level: '1'
+      ages : 4-5
+    - start: 4:30 p.m.
+      end  : 5:30 p.m.
+      class: Orange Belts
+      level: '2'
+      ages : 6-12
+    - start: 5:15 p.m.
+      end  : 6:15 p.m.
+      class: Green, Red, Dan
+      level: 3/4/5
+      ages : 6-12
+    - start: 6:00 p.m.
+      end  : 7:00 p.m.
+      class: White Belts
+      level: '1'
+      ages : 6-12
+    - start: 7:00 p.m.
+      end  : 8:00 p.m.
+      class: All Levels
+      level: '0'
+      ages : 13+
+- day: Thursday
+  hours:
+    - start: 10:00 a.m.
+      end  : 11:00 a.m.
+      class: All Levels
+      level: '0'
+      ages : 0
+    - start: 4:30 p.m.
+      end  : 5:30 p.m.
+      class: White Belts
+      level: '1'
+      ages : 6-12
+    - start: 5:15 p.m.
+      end  : 6:15 p.m.
+      class: Orange Belts
+      level: '2'
+      ages : 6-12
+    - start: 6:00 p.m.
+      end  : 7:00 p.m.
+      class: Green, Red, Dan
+      level: 3/4/5
+      ages : 6-12
+    - start: 7:00 p.m.
+      end  : 8:00 p.m.
+      class: All Levels
+      level: '0'
+      ages : 13+
+- day: Friday
+  hours:
+    - start: 4:00 p.m.
+      end  : 5:00 p.m.
+      class: Karat-a-Tots
+      level: '0'
+      ages : 4-5
+    - start: 4:30 p.m.
+      end  : 5:30 p.m.
+      class: Dan, Red
+      level: 4/5
+      ages : 0
+    - start: 5:15 p.m.
+      end  : 6:15 p.m.
+      class: White Belts
+      level: '1'
+      ages : 0
+    - start: 6:00 p.m.
+      end  : 7:00 p.m.
+      class: Orange, Green
+      level: 2/3
+      ages : 0
+    - start: 7:00 p.m.
+      end  : 8:00 p.m.
+      class: Special Clinics as Scheduled
+      level: '0'
+      ages : 0
