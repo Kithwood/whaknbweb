@@ -8,7 +8,10 @@
     <script type="text/javascript">
     $(function() {
       var pathname = window.location.pathname;
-    
+       //a workaround for home for now...
+       if(pathname == "/")
+         pathname = "/whaknbweb";
+         
       $('a[href="'+pathname+'"]').addClass('active');
   
         $('a').click(function() {
