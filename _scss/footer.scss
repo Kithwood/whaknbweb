@@ -29,5 +29,17 @@ footer {
     footer {
       grid-column-start: 1;
       grid-column-end : 1;
+      ul {
+        li {
+            display:inline-block;
+            height: 2em;
+            
+            img {
+                max-height:2em;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+        }
+    }
     }
   }
