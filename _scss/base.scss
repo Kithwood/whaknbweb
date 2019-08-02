@@ -1,7 +1,7 @@
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 85%;
   display: grid;
   grid-template-columns: 10em auto 10em;
   grid-template-areas: 
@@ -44,7 +44,6 @@ body {
 
   body {
     margin: 0px;
-    margin-left:10%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -54,5 +53,14 @@ body {
         "footer";
     padding: 0px;
     font-size: 2.5em;
+    overflow-x: hidden;
+  }
+  html
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
   }
 }
