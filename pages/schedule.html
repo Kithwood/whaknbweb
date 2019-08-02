@@ -3,11 +3,20 @@ title: Schedule
 layout: main
 permalink: /schedule
 ---
+<script type="text/javascript">
+  $(function (){
+    scrollToDay(["Sun","Mon","Tues","Wednes","Thurs","Fri","Satur"][(new Date()).getDay()]+"day");
+  });
+
+  function scrollToDay(aid){
+      if(aid != "Sunday"){
+    var daytag = $("li[id='"+ aid +"']");
+    $('html,body').animate({scrollTop: daytag.offset().top},'slow');
+    }
+  }   
+</script>
 
 <div id="calendar-wrap">
-        <header>
-            <h2>{{ page.title }}</h2>
-        </header>
         <div id="calendar">
             <ul class="weekdays">
                 <li>Class Hours</li>
@@ -93,7 +102,7 @@ permalink: /schedule
     <div id="mcalendar">
         {% for day in site.data.days_schedule %}
         <ul class="days">
-            <li class="daytitle">{{ day.day }}</li>
+            <li class="daytitle" id='{{ day.day }}'>{{ day.day }}</li>
             {% for hour in day.hours %}
             <li class="day">   
                 <div class="event-desc">
