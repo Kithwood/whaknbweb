@@ -20,5 +20,9 @@ nav {
         &:active {
             background: $tsdactive;
         }
+
+        .active {
+            background: $tsdhighlight;
+        }
     }
 }
