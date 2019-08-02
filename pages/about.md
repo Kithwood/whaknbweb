@@ -3,7 +3,7 @@ title : About West Haven Academy of Karate
 layout: main
 permalink: /about
 ---
-# About West Haven Academy of Karate, New Braunels, TX
+## About West Haven Academy of Karate, New Braunels, TX
 
 The West Haven Academy of Karate in New Braunfels, Texas ( WHAK-NB ) was opened in 
 December of 1993. In December 2012, the school moved to it's current location, 3546 #1B 
@@ -31,7 +31,7 @@ Texas and Kyo Sa Nim Melanie Ferguson, 3rd Dan who owns the WHAK-Greater Hays.
 WHAK-NB also offers many special classes and clinics throughout the year which enhance 
 every students martial arts experience.
 
-# About Tang Soo Do Mi Guk Kwan
+## About Tang Soo Do Mi Guk Kwan
 
 The martial art known as Tang Soo Do is relatively modem. However, its basis, the 
 Korean disciplines of Soo Bahk, and Tae Kyun, dates back many centuries. Tang Soo 
@@ -116,7 +116,7 @@ kinsmen, as a family, and assure future generations that they will inherit the w
 Tang Soo Do Mi Guk Kwan.
 
 
-# About Sa Bom Nim Brett Riley
+## About Sa Bom Nim Brett Riley
 
 Master Riley is a native Texan, and a NBHS class of  '80 graduate and began his 
 Tang Soo Do training over thirty  years ago as a Cadet at the U.S. Air Force Academy. 
